@@ -1,0 +1,117 @@
+2025-04-24 18:34:07,088 - INFO - Bitget API successfully initialized.
+2025-04-24 18:34:07,088 - INFO - Trading coin: BTC | API_SYMBOL: BTCUSDT_UMCBL | Symbol: BTC/USDT:USDT
+2025-04-24 18:34:07,088 - INFO - Parameters for BTC: Trade Amount: 240.0, Leverage: 3.0, Entry Offset: 10.0, Min Profit: 5.0, Fixed Stop-Loss Offset: 1.0, Trailing Stop Below: 5.0, Trailing Stop 60-100: 10.0, Trailing Stop Above: 14.0, Mega Stop: 2.0, Emergency Stop: 40.0%
+2025-04-24 18:34:07,088 - INFO - [BTC] Waiting for initial market data...
+2025-04-24 18:34:08,053 - INFO - [BTC] Async WebSocket subscription successful.
+2025-04-24 18:34:08,092 - INFO - [BTC] Waiting for initial market data...
+2025-04-24 18:34:08,835 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:09,717 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:10,338 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:10,667 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:11,453 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:11,693 - INFO - [BTC] Leverage for BTC/USDT:USDT set to 3.0x.
+2025-04-24 18:34:11,786 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:11,944 - INFO - [BTC] [MAIN] Reserved price = 93468.50. Waiting for ± 10.0...
+2025-04-24 18:34:12,113 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:12,570 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:13,532 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:13,885 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:14,193 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:14,534 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:14,956 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:15,256 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:15,557 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:15,877 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:16,239 - INFO - [BTC] Current Market Price: 93468.5
+2025-04-24 18:34:16,573 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:16,965 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:17,353 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:17,722 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:18,009 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:18,383 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:18,711 - INFO - [BTC] Current Market Price: 93468.4
+2025-04-24 18:34:19,077 - INFO - [BTC] Current Market Price: 93471.0
+2025-04-24 18:34:19,422 - INFO - [BTC] Current Market Price: 93471.0
+2025-04-24 18:34:19,732 - INFO - [BTC] Current Market Price: 93473.3
+2025-04-24 18:34:20,068 - INFO - [BTC] Current Market Price: 93473.3
+2025-04-24 18:34:20,434 - INFO - [BTC] Current Market Price: 93473.3
+2025-04-24 18:34:20,813 - INFO - [BTC] Current Market Price: 93473.3
+2025-04-24 18:34:21,153 - INFO - [BTC] Current Market Price: 93487.7
+2025-04-24 18:34:21,475 - INFO - [BTC] Current Market Price: 93487.7
+2025-04-24 18:34:21,774 - INFO - [BTC] Current Market Price: 93496.7
+2025-04-24 18:34:22,074 - INFO - [BTC] Current Market Price: 93496.5
+2025-04-24 18:34:22,404 - INFO - [BTC] Current Market Price: 93496.5
+2025-04-24 18:34:22,797 - INFO - [BTC] Current Market Price: 93496.5
+2025-04-24 18:34:23,164 - INFO - [BTC] Current Market Price: 93496.5
+2025-04-24 18:34:23,495 - INFO - [BTC] Current Market Price: 93496.5
+2025-04-24 18:34:23,528 - INFO - [BTC] KI Entry Signal: LSTM_Pred=93488.38 | Sentiment=0.80 -> LONG
+2025-04-24 18:34:23,528 - INFO - [BTC] [MAIN] LONG Signal erkannt. Current=93496.70
+2025-04-24 18:34:23,528 - INFO - [BTC] [RESERVED LONG] Entry at 93468.50
+2025-04-24 18:34:23,775 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:24,098 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:24,431 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:24,541 - INFO - [BTC] Plan orders [planType=normal_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512458517,"data":true}
+2025-04-24 18:34:24,770 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:24,833 - INFO - [BTC] Plan orders [planType=profit_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512458805,"data":true}
+2025-04-24 18:34:25,115 - INFO - [BTC] Plan orders [planType=loss_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512459082,"data":true}
+2025-04-24 18:34:25,163 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:25,391 - INFO - [BTC] Plan orders [planType=track_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512459369,"data":true}
+2025-04-24 18:34:25,990 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:26,297 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:26,392 - INFO - [BTC] All open orders and positions are cleared.
+2025-04-24 18:34:26,596 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:26,635 - INFO - [BTC] Available balance: 263.77 USDT
+2025-04-24 18:34:26,635 - INFO - [BTC] Calculated LONG quantity: 0.0026 (Reserved price: 93468.50)
+2025-04-24 18:34:26,907 - INFO - [BTC] Placed MARKET BUY @ ~93494.70, qty=0.002600
+2025-04-24 18:34:26,973 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:27,391 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:28,022 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:28,339 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:28,707 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:28,994 - INFO - [BTC] [STOP-LOSS] set at 93493.60 for LONG.
+2025-04-24 18:34:29,535 - INFO - [BTC] Trailing Stop monitoring started for LONG. Entry = 93494.60
+2025-04-24 18:34:29,535 - INFO - [BTC] New highest price: 93494.70
+2025-04-24 18:34:29,535 - INFO - [BTC] [LONG] Trailing-Stops thread started.
+2025-04-24 18:34:29,770 - INFO - [BTC] Trade duration (0s) unter minimum (600s). Exit ist verzögert.
+2025-04-24 18:34:29,818 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:30,525 - INFO - [BTC] Trade duration (1s) unter minimum (600s). Exit ist verzögert.
+2025-04-24 18:34:30,561 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:30,978 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:31,296 - INFO - [BTC] Trade duration (2s) unter minimum (600s). Exit ist verzögert.
+2025-04-24 18:34:31,410 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:31,798 - INFO - [BTC] [EMERGENCY STOP] LONG triggered: Highest = 93494.70 USD, Entry = 93494.60 USD, Current = 93494.60 USD, Emergency level = 93494.66 USD, Profit = 0.10 USD (0.00%). Emergency Stop = 40%. Exiting trade immediately.
+2025-04-24 18:34:31,828 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:32,131 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:32,390 - INFO - [BTC] Plan orders [planType=normal_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512466364,"data":true}
+2025-04-24 18:34:32,441 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:32,680 - INFO - [BTC] Plan orders [planType=profit_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512466654,"data":true}
+2025-04-24 18:34:32,848 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:33,178 - INFO - [BTC] Current Market Price: 93487.7
+2025-04-24 18:34:33,442 - INFO - [BTC] [MAIN] Reserved price = 93487.70. Waiting for ± 10.0...
+2025-04-24 18:34:33,492 - INFO - [BTC] Current Market Price: 93487.7
+2025-04-24 18:34:33,494 - INFO - [BTC] Plan orders [planType=loss_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512467467,"data":true}
+2025-04-24 18:34:33,778 - INFO - [BTC] Plan orders [planType=track_plan] canceled: {"code":"00000","msg":"success","requestTime":1745512467745,"data":true}
+2025-04-24 18:34:33,791 - INFO - [BTC] Current Market Price: 93487.8
+2025-04-24 18:34:34,150 - INFO - [BTC] Current Market Price: 93487.8
+2025-04-24 18:34:34,525 - INFO - [BTC] Current Market Price: 93487.8
+2025-04-24 18:34:34,919 - INFO - [BTC] Current Market Price: 93487.8
+2025-04-24 18:34:35,255 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:35,590 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:35,910 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:36,214 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:36,766 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:37,610 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:38,022 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:38,971 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:39,313 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:39,746 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:40,513 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:41,259 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:41,637 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:41,959 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:42,295 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:42,785 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:43,107 - INFO - [BTC] Current Market Price: 93494.7
+2025-04-24 18:34:43,432 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:43,851 - INFO - [BTC] Current Market Price: 93494.6
+2025-04-24 18:34:44,290 - INFO - [BTC] Current Market Price: 93494.6

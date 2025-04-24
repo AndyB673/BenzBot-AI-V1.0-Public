@@ -1,0 +1,703 @@
+2025-04-24 18:33:42,933 - INFO - start_coin_update_timer wurde aufgerufen.
+2025-04-24 18:33:42,936 - INFO - Initiale Standardwerte für BTC geladen.
+2025-04-24 18:33:42,940 - INFO - Schedule-Funktionalität aktiviert und Timer gestartet.
+2025-04-24 18:33:42,940 - INFO - API_KEY: bg_0edc0eedd0e58d97e3e4fab6994c7c78, API_SECRET: cf6a98b2f62afbd72b0fc32af11fb295e58fccaa8ba7f1d5564ae931ecc03196, PASSWORD: sdvcasrig12439857145
+2025-04-24 18:33:45,813 - INFO - Keine Positionen gefunden.
+2025-04-24 18:33:45,814 - INFO - Suche nach config.json unter: E:\Daten_In Arbeit\Traden\Bitget Trading\Benz_Bot\Dashboard\TradingBotKiV1.0_Github\config.json
+2025-04-24 18:33:45,816 - INFO - Existiert config.json? True
+2025-04-24 18:33:45,818 - INFO - Rohinhalt von config.json: '{
+  "COIN": [
+    "BTC",
+    "SOL",
+    "ETH",
+    "XRP",
+    "DOGE",
+    "TRUMP"
+  ],
+  "MAX_EXPOSURE_USD": 300,
+  "KI_MODEL_PATH": "lstm_model.h5",
+  "COIN BTC": {
+    "TRADE_AMOUNT_USD": 300,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 10,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 15,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 10,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 14,
+    "MEGA_STOP_TRIGGER_USD": 2,
+    "FIXED_STOPLOSS_OFFSET": 1,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 0.06, "exit_pct": 30 },
+      { "profit_pct": 0.10, "exit_pct": 30 },
+      { "profit_pct": 0.15, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN SOL": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0154,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.01,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN ETH": {
+    "TRADE_AMOUNT_USD": 55,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 1,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.002,
+    "FIXED_STOPLOSS_OFFSET": 0.001,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN XRP": {
+    "TRADE_AMOUNT_USD": 50,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.03,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.0002,
+    "FIXED_STOPLOSS_OFFSET": 0.0001,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN DOGE": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.001,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.003,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.001,
+    "FIXED_STOPLOSS_OFFSET": 0.0015,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 0.07, "exit_pct": 30 },
+      { "profit_pct": 0.12, "exit_pct": 30 },
+      { "profit_pct": 0.18, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN TRUMP": {
+    "TRADE_AMOUNT_USD": 45,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.005,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  }
+}'
+2025-04-24 18:33:45,820 - INFO - config.json erfolgreich geladen: {
+  "COIN": [
+    "BTC",
+    "SOL",
+    "ETH",
+    "XRP",
+    "DOGE",
+    "TRUMP"
+  ],
+  "MAX_EXPOSURE_USD": 300,
+  "KI_MODEL_PATH": "lstm_model.h5",
+  "COIN BTC": {
+    "TRADE_AMOUNT_USD": 300,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 10,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 15,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 10,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 14,
+    "MEGA_STOP_TRIGGER_USD": 2,
+    "FIXED_STOPLOSS_OFFSET": 1,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 0.06,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.1,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.15,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN SOL": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0154,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.01,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN ETH": {
+    "TRADE_AMOUNT_USD": 55,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 1,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.002,
+    "FIXED_STOPLOSS_OFFSET": 0.001,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN XRP": {
+    "TRADE_AMOUNT_USD": 50,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.03,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.0002,
+    "FIXED_STOPLOSS_OFFSET": 0.0001,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN DOGE": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.001,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.003,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.001,
+    "FIXED_STOPLOSS_OFFSET": 0.0015,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 0.07,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.12,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.18,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN TRUMP": {
+    "TRADE_AMOUNT_USD": 45,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.005,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  }
+}
+2025-04-24 18:33:45,824 - INFO - Konfiguration für 'COIN BTC' gefunden: {
+  "TRADE_AMOUNT_USD": 300,
+  "LEVERAGE": 3,
+  "ENTRY_TRIGGER_OFFSET_USD": 10,
+  "MINIMUM_REQUIRED_PROFIT_USD": 5,
+  "TRAILING_DROP_PERCENT": 15,
+  "TRAILING_STOP_PERCENT_BELOW_60": 5,
+  "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 10,
+  "TRAILING_STOP_PERCENT_ABOVE_100": 14,
+  "MEGA_STOP_TRIGGER_USD": 2,
+  "FIXED_STOPLOSS_OFFSET": 1,
+  "PROFIT_TAKE_STAGES": [
+    {
+      "profit_pct": 0.06,
+      "exit_pct": 30
+    },
+    {
+      "profit_pct": 0.1,
+      "exit_pct": 30
+    },
+    {
+      "profit_pct": 0.15,
+      "exit_pct": 40
+    }
+  ],
+  "EMERGENCY_STOP_PERCENT": 40
+}
+2025-04-24 18:33:46,069 - INFO - Suche nach config.json unter: E:\Daten_In Arbeit\Traden\Bitget Trading\Benz_Bot\Dashboard\TradingBotKiV1.0_Github\config.json
+2025-04-24 18:33:46,069 - INFO - Existiert config.json? True
+2025-04-24 18:33:46,069 - INFO - Rohinhalt von config.json: '{
+  "COIN": [
+    "BTC",
+    "SOL",
+    "ETH",
+    "XRP",
+    "DOGE",
+    "TRUMP"
+  ],
+  "MAX_EXPOSURE_USD": 300,
+  "KI_MODEL_PATH": "lstm_model.h5",
+  "COIN BTC": {
+    "TRADE_AMOUNT_USD": 300,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 10,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 15,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 10,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 14,
+    "MEGA_STOP_TRIGGER_USD": 2,
+    "FIXED_STOPLOSS_OFFSET": 1,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 0.06, "exit_pct": 30 },
+      { "profit_pct": 0.10, "exit_pct": 30 },
+      { "profit_pct": 0.15, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN SOL": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0154,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.01,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN ETH": {
+    "TRADE_AMOUNT_USD": 55,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 1,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.002,
+    "FIXED_STOPLOSS_OFFSET": 0.001,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN XRP": {
+    "TRADE_AMOUNT_USD": 50,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.03,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.0002,
+    "FIXED_STOPLOSS_OFFSET": 0.0001,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN DOGE": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.001,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.003,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.001,
+    "FIXED_STOPLOSS_OFFSET": 0.0015,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 0.07, "exit_pct": 30 },
+      { "profit_pct": 0.12, "exit_pct": 30 },
+      { "profit_pct": 0.18, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN TRUMP": {
+    "TRADE_AMOUNT_USD": 45,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.005,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      { "profit_pct": 10, "exit_pct": 30 },
+      { "profit_pct": 20, "exit_pct": 30 },
+      { "profit_pct": 30, "exit_pct": 40 }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  }
+}'
+2025-04-24 18:33:46,071 - INFO - config.json erfolgreich geladen: {
+  "COIN": [
+    "BTC",
+    "SOL",
+    "ETH",
+    "XRP",
+    "DOGE",
+    "TRUMP"
+  ],
+  "MAX_EXPOSURE_USD": 300,
+  "KI_MODEL_PATH": "lstm_model.h5",
+  "COIN BTC": {
+    "TRADE_AMOUNT_USD": 300,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 10,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 15,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 10,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 14,
+    "MEGA_STOP_TRIGGER_USD": 2,
+    "FIXED_STOPLOSS_OFFSET": 1,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 0.06,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.1,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.15,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN SOL": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0154,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.01,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN ETH": {
+    "TRADE_AMOUNT_USD": 55,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 1,
+    "MINIMUM_REQUIRED_PROFIT_USD": 5,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.002,
+    "FIXED_STOPLOSS_OFFSET": 0.001,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN XRP": {
+    "TRADE_AMOUNT_USD": 50,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.0005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.03,
+    "TRAILING_DROP_PERCENT": 2,
+    "TRAILING_STOP_PERCENT_BELOW_60": 2,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 5,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 5,
+    "MEGA_STOP_TRIGGER_USD": 0.0002,
+    "FIXED_STOPLOSS_OFFSET": 0.0001,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN DOGE": {
+    "TRADE_AMOUNT_USD": 40,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.001,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.003,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.001,
+    "FIXED_STOPLOSS_OFFSET": 0.0015,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 0.07,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.12,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 0.18,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  },
+  "COIN TRUMP": {
+    "TRADE_AMOUNT_USD": 45,
+    "LEVERAGE": 3,
+    "ENTRY_TRIGGER_OFFSET_USD": 0.005,
+    "MINIMUM_REQUIRED_PROFIT_USD": 0.02,
+    "TRAILING_DROP_PERCENT": 8,
+    "TRAILING_STOP_PERCENT_BELOW_60": 5,
+    "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 6,
+    "TRAILING_STOP_PERCENT_ABOVE_100": 8,
+    "MEGA_STOP_TRIGGER_USD": 0.005,
+    "FIXED_STOPLOSS_OFFSET": 0.01,
+    "PROFIT_TAKE_STAGES": [
+      {
+        "profit_pct": 10,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 20,
+        "exit_pct": 30
+      },
+      {
+        "profit_pct": 30,
+        "exit_pct": 40
+      }
+    ],
+    "EMERGENCY_STOP_PERCENT": 40
+  }
+}
+2025-04-24 18:33:46,071 - INFO - Konfiguration für 'COIN BTC' gefunden: {
+  "TRADE_AMOUNT_USD": 300,
+  "LEVERAGE": 3,
+  "ENTRY_TRIGGER_OFFSET_USD": 10,
+  "MINIMUM_REQUIRED_PROFIT_USD": 5,
+  "TRAILING_DROP_PERCENT": 15,
+  "TRAILING_STOP_PERCENT_BELOW_60": 5,
+  "TRAILING_STOP_PERCENT_BETWEEN_60_AND_100": 10,
+  "TRAILING_STOP_PERCENT_ABOVE_100": 14,
+  "MEGA_STOP_TRIGGER_USD": 2,
+  "FIXED_STOPLOSS_OFFSET": 1,
+  "PROFIT_TAKE_STAGES": [
+    {
+      "profit_pct": 0.06,
+      "exit_pct": 30
+    },
+    {
+      "profit_pct": 0.1,
+      "exit_pct": 30
+    },
+    {
+      "profit_pct": 0.15,
+      "exit_pct": 40
+    }
+  ],
+  "EMERGENCY_STOP_PERCENT": 40
+}
+2025-04-24 18:33:46,073 - INFO - Aktuelle Parameter:
+BTC:
+  TRADE_AMOUNT_USD = 300
+  LEVERAGE = 3
+  ENTRY_TRIGGER_OFFSET_USD = 10
+  MINIMUM_REQUIRED_PROFIT_USD = 5
+  TRAILING_DROP_PERCENT = 15
+  TRAILING_STOP_PERCENT_BELOW_60 = 5
+  TRAILING_STOP_PERCENT_BETWEEN_60_AND_100 = 10
+  TRAILING_STOP_PERCENT_ABOVE_100 = 14
+  MEGA_STOP_TRIGGER_USD = 2
+  FIXED_STOPLOSS_OFFSET = 1
+  EMERGENCY_STOP_PERCENT = 40
+
+2025-04-24 18:33:51,288 - INFO - Aktuelle Parameter:
+BTC:
+  TRADE_AMOUNT_USD = 240.0
+  LEVERAGE = 3.0
+  ENTRY_TRIGGER_OFFSET_USD = 10.0
+  MINIMUM_REQUIRED_PROFIT_USD = 5.0
+  TRAILING_DROP_PERCENT = 15.0
+  TRAILING_STOP_PERCENT_BELOW_60 = 5.0
+  TRAILING_STOP_PERCENT_BETWEEN_60_AND_100 = 10.0
+  TRAILING_STOP_PERCENT_ABOVE_100 = 14.0
+  MEGA_STOP_TRIGGER_USD = 2.0
+  FIXED_STOPLOSS_OFFSET = 1.0
+  EMERGENCY_STOP_PERCENT = 40.0
+
+2025-04-24 18:33:56,411 - INFO - Aktuelle Parameter:
+BTC:
+  TRADE_AMOUNT_USD = 240.0
+  LEVERAGE = 3.0
+  ENTRY_TRIGGER_OFFSET_USD = 10.0
+  MINIMUM_REQUIRED_PROFIT_USD = 5.0
+  TRAILING_DROP_PERCENT = 15.0
+  TRAILING_STOP_PERCENT_BELOW_60 = 5.0
+  TRAILING_STOP_PERCENT_BETWEEN_60_AND_100 = 10.0
+  TRAILING_STOP_PERCENT_ABOVE_100 = 14.0
+  MEGA_STOP_TRIGGER_USD = 2.0
+  FIXED_STOPLOSS_OFFSET = 1.0
+  EMERGENCY_STOP_PERCENT = 40.0
+
+2025-04-24 18:33:56,664 - INFO - Keine offenen Orders gefunden für BTC/USDT:USDT.
+2025-04-24 18:33:56,908 - INFO - Alle offenen Positionen wurden geschlossen für BTC/USDT:USDT.
+2025-04-24 18:33:57,155 - INFO - Keine offenen Positionen für synchronisierte Market-Exit gefunden für BTC/USDT:USDT.
+2025-04-24 18:33:57,156 - INFO - Starte Bot für BTC mit den Parametern: ['-u', 'mainV25.py', '--coin', 'BTC', '--trade_amount', '240.0', '--leverage', '3.0', '--entry_offset', '10.0', '--min_profit', '5.0', '--trailing_drop', '15.0', '--trailing_stop_below', '5.0', '--trailing_stop_60_100', '10.0', '--trailing_stop_above', '14.0', '--mega_stop', '2.0', '--fixed_stoploss_offset', '1.0', '--emergency_stop_percent', '40.0']
+2025-04-24 18:34:41,658 - INFO - Keine offenen Orders gefunden für BTC/USDT:USDT.
+2025-04-24 18:34:41,912 - INFO - Alle offenen Positionen wurden geschlossen für BTC/USDT:USDT.
+2025-04-24 18:34:42,157 - INFO - Keine offenen Positionen für synchronisierte Market-Exit gefunden für BTC/USDT:USDT.
+2025-04-24 18:34:45,385 - INFO - Prozess beendet (beabsichtigt).
+2025-04-24 18:34:45,386 - INFO - Prozess beendet.
+2025-04-24 18:34:45,386 - INFO - Bot gestoppt, offene Orders/Positionen wurden geschlossen.
